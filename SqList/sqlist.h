@@ -1,6 +1,6 @@
 #pragma once
 /**
- * @brief ´´½¨Ò»¸öË³Ğò±íÀà
+ * @brief åˆ›å»ºä¸€ä¸ªé¡ºåºè¡¨ç±»
  */
 
 class SqList
@@ -9,22 +9,22 @@ public:
 	SqList();
 	~SqList();
 
-	void CreatSqList(int len); // ´´½¨Ò»¸öË³Ğò±í
-	ElemType GetElemByIdx(int idx); // ¸ù¾İÏÂ±ê²éÕÒË³Ğò±íÖĞµÄÔªËØ
-	void PrintSqList(); // ´òÓ¡Ë³Ğò±í
-	void SortSqList(); // ÅÅĞòË³Ğò±í
-	void SplitSqListByParityOfVal(SqList*& l_odd, SqList*& l_even); // ¸ù¾İË³Ğò±íÔªËØµÄÆæÅ¼ĞÔ·ÖÀëË³Ğò±í
-	void GetCommonElem(const SqList* const& l, SqList*& l_com); // ²éÕÒÁ½¸öË³Ğò±íµÄ¹²Í¬ÔªËØ,±£´æÔÚµÚÈı¸öË³Ğò±íÖĞ
-	void DeleteRepeatedElem(); // É¾³ıË³Ğò±íÀïµÄÖØ¸´ÔªËØ
-	int GetLength(); // ·µ»ØË³Ğò±íµÄ³¤¶È
-	bool isEmpty(); // ÅĞ¶ÏË³Ğò±íÊÇ·ñÎª¿Õ
-	bool isFull(); // ÅĞ¶ÏË³Ğò±íÊÇ·ñÒÑÂú
-	bool InsertSqListAtEnd(ElemType data); // ÔÚÎ²²¿²åÈëÔªËØ
-	bool InsertSqListBeforeIdx(int idx, ElemType data); // ÔÚidxÎ»ÖÃÇ°²åÈëÔªËØ
-	bool InsertSqListInOrder(ElemType data); // ²åÈëÔªËØ,²¢±£Ö¤Ë³Ğò±í»¹ÊÇÓĞĞòµÄ
-	bool DeleteElem(int idx); // É¾³ıidxÎ»ÖÃ´¦µÄÔªËØ
+	void CreatSqList(int len); // åˆ›å»ºä¸€ä¸ªé¡ºåºè¡¨
+	ElemType GetElemByIdx(int idx); // æ ¹æ®ä¸‹æ ‡æŸ¥æ‰¾é¡ºåºè¡¨ä¸­çš„å…ƒç´ 
+	void PrintSqList(); // æ‰“å°é¡ºåºè¡¨
+	void SortSqList(); // æ’åºé¡ºåºè¡¨
+	void SplitSqListByParityOfVal(SqList*& l_odd, SqList*& l_even); // æ ¹æ®é¡ºåºè¡¨å…ƒç´ çš„å¥‡å¶æ€§åˆ†ç¦»é¡ºåºè¡¨
+	void GetCommonElem(const SqList* const& l, SqList*& l_com); // æŸ¥æ‰¾ä¸¤ä¸ªé¡ºåºè¡¨çš„å…±åŒå…ƒç´ ,ä¿å­˜åœ¨ç¬¬ä¸‰ä¸ªé¡ºåºè¡¨ä¸­
+	void DeleteRepeatedElem(); // åˆ é™¤é¡ºåºè¡¨é‡Œçš„é‡å¤å…ƒç´ 
+	int GetLength(); // è¿”å›é¡ºåºè¡¨çš„é•¿åº¦
+	bool isEmpty(); // åˆ¤æ–­é¡ºåºè¡¨æ˜¯å¦ä¸ºç©º
+	bool isFull(); // åˆ¤æ–­é¡ºåºè¡¨æ˜¯å¦å·²æ»¡
+	bool InsertSqListAtEnd(ElemType data); // åœ¨å°¾éƒ¨æ’å…¥å…ƒç´ 
+	bool InsertSqListBeforeIdx(int idx, ElemType data); // åœ¨idxä½ç½®å‰æ’å…¥å…ƒç´ 
+	bool InsertSqListInOrder(ElemType data); // æ’å…¥å…ƒç´ ,å¹¶ä¿è¯é¡ºåºè¡¨è¿˜æ˜¯æœ‰åºçš„
+	bool DeleteElem(int idx); // åˆ é™¤idxä½ç½®å¤„çš„å…ƒç´ 
 
 private:
-	ElemType* elem_; // Ë³Ğò±íµÄ»ùµØÖ·
-	int length_; // Ë³Ğò±íµÄ³¤¶È
+	ElemType* elem_; // é¡ºåºè¡¨çš„åŸºåœ°å€
+	int length_; // é¡ºåºè¡¨çš„é•¿åº¦
 };
