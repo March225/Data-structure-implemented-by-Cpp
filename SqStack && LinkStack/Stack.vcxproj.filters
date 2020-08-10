@@ -15,7 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sqstack.cpp">
+    <ClInclude Include="linkstack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sqstack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="linkstack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
@@ -24,22 +38,8 @@
     <ClCompile Include="solution.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="linkstack.cpp">
+    <ClCompile Include="sqstack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="sqstack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="stdafx.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="solution.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="linkstack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
