@@ -16,11 +16,11 @@ int main(int argc, char* argv[])
 {
 	FILE* stream1;
 	ios::sync_with_stdio(false); // 让c风格的输入输出流和c++的输入输出流分开,使cin读入的更快
-	freopen_s(&stream1, "7_3.in", "r", stdin); // 直接从文档中读取待输入的数据
+	freopen_s(&stream1, "7_3.in", "r", stdin); // 直接从文档中读取待输入的数据，不同文档代表不同实验任务的输入
 
 	//freopen( "output.out", "w", stdout ); // 直接输出到文档
 
-	// 下面是展示顺序表的删除重复元素函数DeleteRepeatedElem()的功能
+	// 示例：实验任务<7>删除递增有序顺序表中的重复元素
 	SqList* l1 = new SqList();
 	int len;
 	cin >> len;

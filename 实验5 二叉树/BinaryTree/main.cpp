@@ -18,6 +18,8 @@ int main()
 	ios::sync_with_stdio(false); // 让c风格的输入输出流和c++的输入输出流分开,使cin读入的更快
 	freopen_s(&stream1, "1.in", "r", stdin); // 直接从文档中读取待输入的数据
 
+	/************** 以下为示例，程序的实现没有按照实验任务的顺序 **************/
+
 	BinaryTree<char>* BiT1 = new BinaryTree<char>;
 	BiT1->CreatByPreOrderOfExtBiT(); // 通过扩展二叉树的前序遍历创建二叉树
 

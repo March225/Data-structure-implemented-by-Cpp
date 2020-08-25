@@ -16,10 +16,10 @@ int main()
 {
 	FILE* stream1;
 	ios::sync_with_stdio(false); // 让c风格的输入输出流和c++的输入输出流分开,使cin读入的更快
-	freopen_s(&stream1, "10_1.in", "r", stdin); // 直接从文档中读取待输入的数据
+	freopen_s(&stream1, "10_1.in", "r", stdin); // 直接从文档中读取待输入的数据，不同文档代表不同实验任务的输入
 
 
-	// 下面展示的是按照元素值的奇偶性分解单链表的功能，实现函数为 SplitLinkListByParityOfVal()
+	// 示例：实验任务<10>将单链表Ｌ中的奇数项和偶数项结点分解开（元素值为奇数、偶数）
 	LinkList* L1 = new LinkList();
 	int len;
 	cin >> len;

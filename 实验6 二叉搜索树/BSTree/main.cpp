@@ -16,12 +16,12 @@
 int main() {
 	ios::sync_with_stdio(false); // 让c风格的输入输出流和c++的输入输出流分开,使cin读入的更快
 	FILE* stream1;
-	freopen_s(&stream1, "2.in", "r", stdin); // 直接从文档中读取待输入的数据
+	freopen_s(&stream1, "2.in", "r", stdin); // 直接从文档中读取待输入的数据，不同文档代表不同实验任务的输入
 	
 	string s = "", num = "";
 	stringstream ss;
 
-// 	// 二分查找
+// 	// 实验任务(1)：二分查找（运行此段程序要注释掉实验任务(2)~(5)的程序）
 // 	vector<int> nums;
 // 	while (1) {
 // 		if (getline(cin, s)) {
@@ -45,7 +45,7 @@ int main() {
 // 		else break;
 // 	}
 
-	// 创建BST
+	// 实验任务(2)：创建BST
 	BSTree<int>* BST1 = new BSTree<int>();
 	getline(cin, s);
 	ss << s;
@@ -62,7 +62,7 @@ int main() {
 	BST1->InOrderTraverse(0);
 	cout << endl;
 
-	// 在BST中查找元素，并输出待查找元素的父结点或潜在父结点(如果可以插入BST，插入之后的父结点)
+	// 实验任务(3)：在BST中查找元素，并输出待查找元素的父结点或潜在父结点(如果可以插入BST，插入之后的父结点)
 	getline(cin, s);
 	ss.clear();
 	ss << s;
@@ -77,7 +77,7 @@ int main() {
 	}
 	cout << endl;
 	
-	// 删除BST中的结点
+	// 实验任务(4)：删除BST中的结点
 	getline(cin, s);
 	ss.clear();
 	ss << s;
@@ -91,7 +91,7 @@ int main() {
 	}
 	cout << endl;
 
-	// 创建AVL树
+	// 实验任务(5)：创建AVL树
 	BSTree<int>* BST2 = new BSTree<int>();
 	getline(cin, s);
 	ss.clear();
@@ -106,4 +106,6 @@ int main() {
 	BST2->CreateAVL(nums2);
 	cout << "AVL树创建成功，且中序遍历（升序）为：" << endl;
 	BST2->InOrderTraverse(0);
+
+	delete BST1,BST2;
 }

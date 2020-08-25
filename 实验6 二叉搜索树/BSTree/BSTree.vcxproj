@@ -140,11 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="binsearch.cpp" />
-    <ClCompile Include="binsearch.h" />
     <ClCompile Include="bstree.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="binsearch.h" />
     <ClInclude Include="bstree.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
